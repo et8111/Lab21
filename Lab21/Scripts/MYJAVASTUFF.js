@@ -36,7 +36,6 @@
         return false;
     }
 
-    alert(document.theForm.pass2.value + document.theForm.pass.value);
     return (true);
 }
 
