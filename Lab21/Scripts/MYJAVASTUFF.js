@@ -30,6 +30,13 @@
         document.theForm.pass.focus();
         return false;
     }
+    if (document.theForm.pass2.value != document.theForm.pass.value) {
+        alert("Passwords dont match");
+        document.theForm.pass2.focus();
+        return false;
+    }
+
+    alert(document.theForm.pass2.value + document.theForm.pass.value);
     return (true);
 }
 
