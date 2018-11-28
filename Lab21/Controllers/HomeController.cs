@@ -23,5 +23,28 @@ namespace Lab21.Controllers
             ViewBag.fn = firstName;
             return View();
         }
+
+        public ActionResult doMATH(int a, int b)
+        {
+            int c = 0;
+            List<int> l = new List<int>();
+            l.Add(a);
+            l.Add(b);
+            for (int i = 0; i < 10; i++)
+            {
+                c = a + b;
+                a = b;
+                b = c;
+                l.Add(c);
+            }
+            return Content(string.Join(" ",l), "text/plain");
+            //return Json(l,JsonRequestBehavior.AllowGet);
+        }
+
+        public ActionResult HelloAjax()
+        {
+            return Content("Hello Ajax", "text/plain");
+        }
+
     }
 }
