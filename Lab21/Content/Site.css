@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 50px;
+    /*padding-top: 50px;*/
     padding-bottom: 20px;
 }
 
@@ -24,8 +24,14 @@ textarea {
 }
 
 .img-circle {
-    margin-right: 50px;
+    margin-right: 100px;
     float: right;
-    width: 25%;
-    height: 25%;
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
+    border: 5px solid #78c2ad;
+}
+
+.headerIndex{
+    padding-top: 5rem;
 }
