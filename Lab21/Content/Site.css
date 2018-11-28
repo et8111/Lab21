@@ -22,3 +22,10 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.img-circle {
+    margin-right: 50px;
+    float: right;
+    width: 25%;
+    height: 25%;
+}
