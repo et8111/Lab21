@@ -38,7 +38,6 @@ namespace Lab21.Controllers
                 l.Add(c);
             }
             return Content(string.Join(" ",l), "text/plain");
-            //return Json(l,JsonRequestBehavior.AllowGet);
         }
 
         public ActionResult autoFill()
