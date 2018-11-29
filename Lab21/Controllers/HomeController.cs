@@ -41,10 +41,10 @@ namespace Lab21.Controllers
             //return Json(l,JsonRequestBehavior.AllowGet);
         }
 
-        public ActionResult HelloAjax()
+        public ActionResult autoFill()
         {
-            return Content("Hello Ajax", "text/plain");
+            string[] s = { "asdf", "asdf", "asdf@asdf.com", "9999999999", "asdf", "asdf" };
+            return Json(s, JsonRequestBehavior.AllowGet);
         }
-
     }
 }

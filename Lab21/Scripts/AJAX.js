@@ -1,19 +1,14 @@
 ﻿$(document).ready(function () {
-    $.ajax({
-        type: 'GET',
-        data: { a: 0, b: 1 },
-        url: 'Home/doMATH',
-        success: function (temp) {
-                console.log(temp);
-        }
-    });
-});
-$(document).ready(function () {
+    $("#subButton").contextmenu(function () {
+        var b = document.getElementsByTagName("input");
         $.ajax({
             type: 'GET',
-            url: "Home/HelloAjax",
+            url: "autoFill",
             success: function (result) {
-                console.log("YEA");
+                for (var i = 0; i < b.length; i++)
+                    b[i].value = result[i];
+                validate();
             }
         });
+    });
 });

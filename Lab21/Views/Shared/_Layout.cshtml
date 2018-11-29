@@ -6,11 +6,10 @@
     <title>PopCopy</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    <script src="~/Scripts/MYJAVASTUFF.js"></script>
     <link href="~/Content/Site.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="navbar navbar-expand-lg navbar-dark bg-primary" style="margin-bottom: 50px">
         <div class="container">
             <div class="navbar-header">
                 <label class="modal-header" style="border: 0; color:white"> PopCopy!</label>
@@ -34,7 +33,7 @@
 
     @Scripts.Render("~/bundles/jquery")
     <script src="~/Scripts/AJAX.js"></script>
-
+    <script src="~/Scripts/MYJAVASTUFF.js"></script>
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>

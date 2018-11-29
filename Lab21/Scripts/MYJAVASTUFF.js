@@ -26,7 +26,7 @@
         document.getElementById("lastNameValidate").setAttribute("class", "valid-feedback");
         document.getElementById("lastNameValidate").innerHTML = "Successful!";
     }
-
+    //email
     if (document.theForm.email.value == "") {
         document.theForm.email.focus();
         document.theForm.email.setAttribute("class", "form-control is-invalid");
@@ -38,10 +38,8 @@
         document.getElementById("emailNameValidate").setAttribute("class", "valid-feedback");
         document.getElementById("emailNameValidate").innerHTML = "Successful!";
     }
-
-
-    var tempPhone = document.theForm.phone.value;
-    if (tempPhone.length != 10)
+    //phone number
+    if (document.theForm.phone.value.length != 10)
     {
         document.theForm.phone.focus();
         document.theForm.phone.setAttribute("class", "form-control is-invalid");
@@ -53,7 +51,7 @@
         document.getElementById("phoneNameValidate").setAttribute("class", "valid-feedback");
         document.getElementById("phoneNameValidate").innerHTML = "Successful!";
     }
-
+    //password 1
     if (document.theForm.pass.value == "") {
         document.theForm.pass.focus();
         document.theForm.pass.setAttribute("class", "form-control is-invalid");
@@ -65,7 +63,7 @@
         document.getElementById("passNameValidate").setAttribute("class", "valid-feedback");
         document.getElementById("passNameValidate").innerHTML = "Look at you go!";
     }
-
+    //password 2
     if (document.theForm.pass2.value != document.theForm.pass.value || document.theForm.pass2.value == "") {
         document.theForm.pass2.focus();
         document.theForm.pass2.setAttribute("class", "form-control is-invalid");
@@ -79,7 +77,6 @@
     }
         return (flag);
 }
-
-function test() {
-    document.getElementsByTagName("h2")[0].innerHTML = "test";
-}
+$(document).ready(function () {
+    $("#pop1Background").slideDown(2000);
+});
