@@ -75,6 +75,7 @@
         document.getElementById("pass2NameValidate").setAttribute("class", "valid-feedback");
         document.getElementById("pass2NameValidate").innerHTML = "Miracles DO happen!";
     }
+    document.getElementsByName("bday")[0].value = "2018-01-02";
         return (flag);
 }
 $(document).ready(function () {

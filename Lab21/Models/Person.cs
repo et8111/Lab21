@@ -13,6 +13,6 @@ namespace Lab21.Models
         public string Phone { get; set; }
         public string Password { get; set; }
         public string MotherName { get; set; }
-        public DateTime Birthday { get; set; }
+        public string Birthday { get; set; }
     }
 }
